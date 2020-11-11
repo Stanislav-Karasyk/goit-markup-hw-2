@@ -4,31 +4,85 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>hw-2-Portfolio</title>
+        <link rel="stylesheet" href="./css/slyles.css">
     </head>
 
     <body>
+        <!-- шапка сайта -->
         <header>
         
             <!-- главная навигация -->
             <nav>
-                <a href="./index.html">WebStudio</a>
-                <ul>
-                    <li><a href="">Студия</a></li>
-                    <li><a href="">Портфолио</a></li>
-                    <li><a href="">Контакты</a></li>
+                <a class="logo" href="./index.html">
+                    <samp class="logo-web">Web</samp><samp class="logo-studio">Studio</samp>
+                </a>
+                <ul class="list">
+                    <li><a class="link-studio" href="./index.html">Студия</a></li>
+                    <li><a class="link-portfolio" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="link-contacts" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul>
+            <ul class="list">
                 <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </header>
         <main>
-
+            <section>
+                <h1>Примеры работ</h1>
+                <!-- фильтр по примерам работ -->
+                <ul class="list">
+                    <li><button class="button">Все</button></li>
+                    <li><button class="button">Веб-сайты</button></li>
+                    <li><button class="button">Приложения</button></li>
+                    <li><button class="button">Дизайн</button></li>
+                    <li><button class="button">Маркетинг</button></li>
+                </ul>
+                <ul class="list">
+                    <li><img src="./images/portfolio/1.jpg" alt="" width="370">
+                        <h2>Технокряк</h2>
+                        <p>Веб-сайт</p>
+                    </li>
+                    <li><img src="./images/portfolio/2.jpg" alt="" width="370">
+                        <h2>Постер New Orlean vs Golden Star</h2>
+                        <p>Дизайн</p>
+                    </li>
+                    <li><img src="./images/portfolio/3.jpg" alt="" width="370">
+                        <h2>Ресторан Seafood</h2>
+                        <p>Приложение</p>
+                    </li>
+                    <li><img src="./images/portfolio/4.jpg" alt="" width="370">
+                        <h2>Проект Prime</h2>
+                        <p>Маркетинг</p>
+                    </li>
+                    <li><img src="./images/portfolio/5.jpg" alt="" width="370">
+                        <h2>Проект Boxes</h2>
+                        <p>Приложение</p>
+                    </li>
+                    <li><img src="./images/portfolio/6.jpg" alt="" width="370">
+                        <h2>Inspiration has no Borders</h2>
+                        <p>Веб-сайт</p>
+                    </li>
+                    <li><img src="./images/portfolio/7.jpg" alt="" width="370">
+                        <h2>Издание Limited Edition</h2>
+                        <p>Дизайн</p>
+                    </li>
+                    <li><img src="./images/portfolio/8.jpg" alt="" width="370">
+                        <h2>Проект LAB</h2>
+                        <p>Маркетинг</p>
+                    </li>
+                    <li><img src="./images/portfolio/9.jpg" alt="" width="370">
+                        <h2>Growing Business</h2>
+                        <p>Приложение</p>
+                    </li>
+                </ul>
+            </section>
         </main>
-        <footer>
+        <footer class="footer">
             <!-- логотип -->
-            <a href="./index.html">WebStudio</a>
+            <a href="./index.html" class="logo">
+                <samp class="logo-web">Web</samp><samp class="logo-studio-footer">Studio</samp>
+            </a>
             <address>
                 <p>г. Киев, пр-т Леси Украинки, 26</p>
                 <a href="mailto:info@example.com">info@example.com</a> <br />
