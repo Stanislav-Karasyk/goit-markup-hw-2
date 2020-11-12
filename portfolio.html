@@ -4,30 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>hw-2-Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/slyles.css">
     </head>
 
     <body>
         <!-- шапка сайта -->
         <header>
-        
+    
             <!-- главная навигация -->
             <nav>
-                <a class="logo" href="./index.html">
+                <a href="./index.html" class="logo">
                     <samp class="logo-web">Web</samp><samp class="logo-studio">Studio</samp>
                 </a>
                 <ul class="list">
-                    <li><a class="link-studio" href="./index.html">Студия</a></li>
-                    <li><a class="link-portfolio" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="link-contacts" href="">Контакты</a></li>
+                    <li><a href="./index.html" class="link-studio">Студия</a></li>
+                    <li><a href="./portfolio.html" class="link-portfolio">Портфолио</a></li>
+                    <li><a href="" class="link-contacts">Контакты</a></li>
                 </ul>
             </nav>
+    
+            <!-- ссылки на почти и телефон -->
             <ul class="list">
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="link-tel">+38 096 111 11 11</a></li>
             </ul>
         </header>
         <main>
+            <!-- примеры работ -->
             <section>
                 <h1>Примеры работ</h1>
                 <!-- фильтр по примерам работ -->
@@ -78,15 +84,17 @@
                 </ul>
             </section>
         </main>
+
+        <!-- футер -->
         <footer class="footer">
-            <!-- логотип -->
+            <!-- лого -->
             <a href="./index.html" class="logo">
                 <samp class="logo-web">Web</samp><samp class="logo-studio-footer">Studio</samp>
             </a>
             <address>
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-                <a href="mailto:info@example.com">info@example.com</a> <br />
-                <a href="tel:+380991111111">+38 099 111 11 11</a>
+                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                <a href="mailto:info@example.com" class="footer-mail">info@example.com</a> <br />
+                <a href="tel:+380991111111" class="footer-tel">+38 099 111 11 11</a>
             </address>
         </footer>
     </body>
