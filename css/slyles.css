@@ -29,11 +29,6 @@ body {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: var(--title-text-color);
-}
-
 /* шапка сайта */
 /* лого */
 .logo {
@@ -42,14 +37,23 @@ a {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo-web {
   color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
 }
 
 .logo-studio {
   color: var(--title-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .logo-studio-footer {
@@ -57,44 +61,36 @@ a {
 }
 
 /* главная навигация */
-.link-studio {
+
+.site-nav .link {
+  color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.link-portfolio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
-.link-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.link-studio:hover,
-.link-studio:focus,
-.link-portfolio:hover,
-.link-portfolio:focus,
-.link-contacts:hover,
-.link-contacts:focus {
+.link.current {
   color: var(--accent-color);
 }
 
 /* ссылки на почти и телефон */
-.link-mail {
+
+.contacts .link-contacts {
   color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .link-tel {
@@ -106,10 +102,8 @@ a {
   letter-spacing: 0.02em;
 }
 
-.link-mail:hover,
-.link-mail:hover,
-.link-tel:hover,
-.link-tel:focus {
+.contacts .link-contacts:hover,
+.contacts .link-contacts:focus {
   color: var(--accent-color);
 }
 
@@ -127,9 +121,10 @@ a {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.button {
+.hero-button {
   background-color: var(--accent-color);
 }
 
@@ -141,10 +136,13 @@ a {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 /* преимущества */
 .advantage-title {
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -167,6 +165,7 @@ a {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* команда */
@@ -182,6 +181,7 @@ a {
   font-size: 36px;
   line-height: 1.2x;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-name {
@@ -191,6 +191,7 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-profession {
@@ -198,6 +199,7 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* футер */
@@ -224,6 +226,7 @@ a {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .footer-tel {
@@ -234,6 +237,41 @@ a {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* портфолио */
+/* примеры работ (фильтр) */
+.filter-button {
+  background-color: var(--gray-background);
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* примеры работ */
+.examples-name {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-direction {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
